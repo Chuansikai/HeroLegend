@@ -1,0 +1,33 @@
+# --- Godot 缓存/临时 ---
+.godot/
+.import/
+# Godot 导出目录（你导出exe/apk会放这）
+export/
+
+# --- 本地/用户数据（存档、日志等） ---
+# user:// 实际在系统用户目录，不在仓库；若你把调试存档放到项目data/savedata，忽略它
+data/savedata/
+*.log
+*.tmp
+
+# --- 操作系统/编辑器杂项 ---
+Thumbs.db
+.DS_Store
+.vscode/*          # 如果你想共享VSCode设置，可把需要的单独取消忽略
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# --- 构建产物/可执行 ---
+*.exe
+*.dll
+*.pdb
+*.apk
+*.aab
+*.ipa
+
+# --- 证书/私钥（安卓签名、iOS证书等）---
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
