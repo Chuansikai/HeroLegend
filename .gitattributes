@@ -13,24 +13,21 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mov filter=lfs diff=lfs merge=lfs -text
 
-# 让常见二进制资源走 LFS
-git lfs track "*.png"
-git lfs track "*.jpg"
-git lfs track "*.jpeg"
-git lfs track "*.webp"
-git lfs track "*.psd"
-git lfs track "*.wav"
-git lfs track "*.ogg"
-git lfs track "*.mp3"
-git lfs track "*.ttf"
-git lfs track "*.otf"
-git lfs track "*.mp4"
-git lfs track "*.mov"
+# ---- Git LFS ----
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.psd  filter=lfs diff=lfs merge=lfs -text
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.ogg  filter=lfs diff=lfs merge=lfs -text
+*.mp3  filter=lfs diff=lfs merge=lfs -text
+*.ttf  filter=lfs diff=lfs merge=lfs -text
+*.otf  filter=lfs diff=lfs merge=lfs -text
+*.mp4  filter=lfs diff=lfs merge=lfs -text
+*.mov  filter=lfs diff=lfs merge=lfs -text
 
-# 推荐把 Godot 文本资源标记为文本并强制 LF（便于合并 diff）
-# 注意：这段写进 .gitattributes 文件，而不是 shell 里执行
-
-# 文本文件强制LF
+# ---- Godot 文本文件统一 LF（便于 diff/合并）----
 *.gd     text eol=lf
 *.tscn   text eol=lf
 *.tres   text eol=lf
