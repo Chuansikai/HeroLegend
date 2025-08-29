@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp5mdsj5yfha7"]
+
+[ext_resource type="PackedScene" uid="uid://32l2g6s1y6ps" path="res://scenes/gameplay/Player.tscn" id="1_5qbjp"]
+
+[node name="World" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -639.0
+offset_top = -361.0
+offset_right = 639.0
+offset_bottom = 365.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.931445, 0.943292, 1)
+
+[node name="Player" parent="." instance=ExtResource("1_5qbjp")]
